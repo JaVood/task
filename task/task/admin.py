@@ -13,4 +13,3 @@ class GroupAdmin(admin.ModelAdmin):
 class ElementAdmin(admin.ModelAdmin):
     form = forms.ElementForm
     exclude = ('group_check', 'slug')
-

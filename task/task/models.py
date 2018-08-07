@@ -70,6 +70,8 @@ class Element(models.Model):
         t.save()
         super(Element, self).delete(*args, **kwargs)
 
+    objects = models.Manager()
+
     def __str__(self):
         return self.name
 
@@ -146,4 +148,3 @@ class Group(MPTTModel):
 
     def __str__(self):
         return self.name
-

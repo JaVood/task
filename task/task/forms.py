@@ -35,4 +35,3 @@ class ElementForm(PublicationForm):
     class Meta:
         model = models.Element
         fields = '__all__'
-
